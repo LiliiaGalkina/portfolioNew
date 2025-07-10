@@ -62,14 +62,23 @@
     }
 
     &__menu-item {
+    
         &:not(:last-child) {
             margin-right: 2rem;
         }
     }
 
     &__menu-link {
+        display: block;
+        padding: 0.2rem;
+        border-radius : 0.2rem;
         font-size: 2rem;
         color: #19081d;
+        transition: all 0.5s ease;
+        &:hover {
+
+            box-shadow: 0 0 1rem #19081d;
+        }
     }
 }
 

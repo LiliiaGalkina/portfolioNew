@@ -59,8 +59,15 @@
   margin-right: 2rem;
 }
 .header__menu-link {
+  display: block;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
   font-size: 2rem;
   color: #19081d;
+  transition: all 0.5s ease;
+}
+.header__menu-link:hover {
+  box-shadow: 0 0 1rem #19081d;
 }
 
 @keyframes jumping {
