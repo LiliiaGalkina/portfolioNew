@@ -33,15 +33,19 @@
           <div class="container">
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                <a href="" class="header__menu-link">Обо мне</a>
+                <i class="fa fa-street-view"></i>
+                <a href="#aboutme" class="header__menu-link">Обо мне</a>
               </li>
               <li class="header__menu-item">
-                <a href="" class="header__menu-link">Навыки</a>
+                <i class="fa fa-star"></i>
+                <a href="#skills" class="header__menu-link">Навыки</a>
               </li>
               <li class="header__menu-item">
+                <i class="fa fa-book"></i>
                 <a href="" class="header__menu-link">Портфолио</a>
               </li>
               <li class="header__menu-item">
+                <i class="fa fa-envelope-open"></i>
                 <a href="" class="header__menu-link">Контакты</a>
               </li>
             </ul>
@@ -51,8 +55,42 @@
       <main class="main">
         <div class="container">
           <section class="aboutme">
-            <div class="aboutme__item"></div>
-            <div class="aboutme__item"></div>
+            <div class="aboutme__item"><img src="./img/aboutme.jpg" alt="блондинка за ноутбуком"></div>
+            <div id="aboutme" class="aboutme__item">
+                <div class="about__item-text">
+                    <p>Здравствуйте, меня зовут Лилия, и я начинающий frontend разработчик, который строит новую карьеру на том, что мне действительно нравится. </p> 
+                    <p> В течение нескольких я оттачиваю свои навыки веб-разработчика, изучая, как создавать веб-приложения с использованием HTML, CSS, JavaScript, React, Node, базы данных в MySQL. </p>
+                    <p>  Мне очень нравится сам процесс создания, когда я НИЧТО перевращаю в НЕЧТО замечательное, чувствую себя настроящим художником. Верю в постоянное обучение, которое всё больше и больше улучшает мои навыки программирования. </p>
+                </div>
+            </div>
+          </section>
+          <section id="skills" class="skills">
+            <h2 class="skills__title title">Мои навыки</h2>
+            <div class="skills__items">
+                <div class="skills__item"><img src="./img/skills/html5.png" alt="HTML5"></div>
+                <div class="skills__item"><img src="./img/skills/css3.png" alt="CSS3"></div>
+                <div class="skills__item"><img src="./img/skills/javascript.png" alt="JS"></div>
+                <div class="skills__item"><img src="./img/skills/sass.png" alt="SASS"></div>
+                <div class="skills__item"><img src="./img/skills/git.png" alt="GIT"></div>
+                <div class="skills__item"><img src="./img/skills/github.png" alt="GITHUB"></div>
+                <div class="skills__item"><img src="./img/skills/react.png" alt="REACT"></div>
+                <div class="skills__item"><img src="./img/skills/redux.png" alt="REDUX"></div>
+                <div class="skills__item"><img src="./img/skills/typescript.png" alt="TS"></div>
+                <div class="skills__item"><img src="./img/skills/node-js.png" alt="NODE-JS"></div>
+                <div class="skills__item"><img src="./img/skills/webpack.png" alt="WEBPACK"></div>
+                <div class="skills__item"><img src="./img/skills/mysql.png" alt="MYSQL"></div>
+            </div>
+          </section>
+          <section class="portfolio">
+            <h2 class="portfolio__title title">Портлолио</р>
+            <h3 class="portfolio__subtitle">Многостраничные сайты</h3>
+            <div class="portfolio__items">
+                <div class="portfolio__item"></div>
+            </div>
+            <h3 class="portfolio__subtitle ">Одностраничные сайты и отдельные страницы</h3>
+            <div class="portfolio__items"></div>
+            <h3 class="portfolio__subtitle ">Мини-приложения на JS и React</h3>
+            <div class="portfolio__items"></div>
           </section>
         </div>
       </main>

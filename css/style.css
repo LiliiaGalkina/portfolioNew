@@ -1,8 +1,24 @@
+body {
+  color: #4e125e;
+}
+
+.main {
+  background-color: #f6eef8;
+}
+
 .container {
   max-width: 123rem;
   margin: 0 auto;
 }
 
+.title {
+  font-family: "Gabriela", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/*HEADER*/
 .header__hero {
   position: relative;
   height: 100vh;
@@ -55,19 +71,28 @@
   display: flex;
   justify-content: flex-end;
 }
+.header__menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+.header__menu-item i {
+  margin-right: 0.7rem;
+  font-size: 2rem;
+  color: #19081d;
+}
+.header__menu-item:hover {
+  box-shadow: 0 0 1rem #19081d;
+}
 .header__menu-item:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 .header__menu-link {
   display: block;
-  padding: 0.2rem;
-  border-radius: 0.2rem;
   font-size: 2rem;
   color: #19081d;
   transition: all 0.5s ease;
-}
-.header__menu-link:hover {
-  box-shadow: 0 0 1rem #19081d;
 }
 
 @keyframes jumping {
@@ -79,4 +104,64 @@
     transform: translateY(2.5rem);
     opacity: 0.1;
   }
+}
+/*MAIN*/
+/*about-me*/
+.aboutme {
+  padding: 7rem 0;
+  display: flex;
+}
+.aboutme__item {
+  flex: 0 1 49%;
+}
+.aboutme__item img {
+  width: 90%;
+  border-radius: 50%;
+}
+.aboutme__item:first-child {
+  margin-right: 2%;
+}
+.aboutme__item:last-child {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+}
+.aboutme__item:last-child p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/*skills*/
+.skills {
+  padding: 7rem 0;
+}
+.skills__title {
+  margin-bottom: 7rem;
+}
+.skills__items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 20rem));
+  justify-content: space-between;
+  justify-items: center;
+  row-gap: 4rem;
+}
+.skills__item {
+  width: 10rem;
+}
+.skills__item img {
+  width: 100%;
+}
+
+/*portfolio*/
+.portfolio {
+  padding: 7rem 0;
+}
+.portfolio__title {
+  margin-bottom: 3rem;
+}
+.portfolio__subtitle {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
 }
