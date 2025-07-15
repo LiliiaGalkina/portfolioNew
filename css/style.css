@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 123rem;
+  max-width: 128rem;
   margin: 0 auto;
 }
 
@@ -157,6 +157,7 @@ body {
 }
 .skills__part:last-child {
   margin-left: 2rem;
+  padding: 4rem;
   overflow: hidden;
 }
 .skills__part:last-child img {
