@@ -13,9 +13,15 @@ body {
 
 .title {
   font-family: "Gabriela", serif;
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 700;
   text-align: center;
+  letter-spacing: 1rem;
+  background-image: linear-gradient(45deg, #4a1164, #6b3e79);;
+  color: transparent;
+  background-clip: text;
+  text-shadow: 1rem 1rem 1.5rem #c7a3cf;
+  animation: 1.56s linear infinite maintitle;
 }
 
 /*HEADER*/
@@ -127,6 +133,7 @@ body {
     img {
       width: 90%;
       border-radius: 50%;
+      animation: 2s linear infinite myborder;
     }
 
     &:first-child {
@@ -154,6 +161,27 @@ body {
     margin-bottom: 7rem;
   }
 
+  &__parts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__part {
+    flex: 0 1 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    &:last-child {
+        margin-left: 2rem;
+        overflow: hidden;
+        img {
+            width: 90%;
+            border-radius: 50%;
+            animation: 2s linear infinite myborder;
+          }
+    }
+  }
   // .skills__items
 
   &__items {
@@ -162,15 +190,20 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(auto, 20rem));
     justify-content: space-between;
     justify-items: center;
-    row-gap: 6rem;
+    row-gap: 4rem;
   }
 
   // .skills__item
 
   &__item {
     width: 10rem;
+    transition: all 0.5s ease;
     img {
       width: 100%;
+    }
+
+    &:hover {
+        transform: scale(1.2);
     }
   }
 }
@@ -180,7 +213,14 @@ body {
   padding: 7rem 0;
 
   &__title {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    font-size: 7rem;
+    letter-spacing: 1rem;
+    background-image: linear-gradient(45deg, #4a1164, #6b3e79);;
+    color: transparent;
+    background-clip: text;
+    text-shadow: 1rem 1rem 1.5rem #c7a3cf;
+    animation: 1.56s linear infinite maintitle;
   }
 
   &__subtitle {
@@ -254,3 +294,33 @@ body {
     font-size: 2rem;
   }
 }
+
+@keyframes myborder {
+    0% {
+      box-shadow: 0 0 1rem #4e125e;
+      opacity: 0.8;
+    }
+    50% {
+        box-shadow: 0 0 4rem #503058;
+        opacity: 1;
+    }
+    100% {
+        box-shadow: 0 0 1rem #4e125e;
+        opacity: 0.8;
+      }
+  }
+
+  @keyframes maintitle {
+    0% {
+    
+      opacity: 0.8;
+    }
+    50% {
+ 
+        opacity: 1;
+    }
+    100% {
+      
+        opacity: 0.8;
+      }
+  }
