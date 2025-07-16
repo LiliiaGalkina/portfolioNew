@@ -200,8 +200,8 @@ body {
   animation: 1.56s linear infinite maintitle;
 }
 .portfolio__subtitle {
-  margin-bottom: 4rem;
-  font-size: 3rem;
+  margin-bottom: 6rem;
+  font-size: 4rem;
   font-weight: 600;
   text-align: center;
 }
@@ -215,6 +215,8 @@ body {
 }
 .portfolio__item {
   position: relative;
+  background-color: #ffffff;
+  border: 0.1rem solid #ffffff;
 }
 
 .item-portfolio {
