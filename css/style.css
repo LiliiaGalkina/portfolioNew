@@ -71,8 +71,11 @@ body {
   animation: 1.56s linear infinite jumping;
 }
 .header__menu {
+  position: sticky;
+  top: 0;
   padding: 2rem 0;
   background-color: #ebd2f1;
+  z-index: 10;
 }
 .header__menu-list {
   display: flex;
@@ -206,7 +209,7 @@ body {
   text-align: center;
 }
 .portfolio__items {
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 6rem;
@@ -290,4 +293,35 @@ body {
   100% {
     opacity: 0.8;
   }
+}
+/*contacts*/
+.contacts__title {
+  margin-bottom: 6rem;
+}
+.contacts__items {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__item {
+  font-size: 6rem;
+  transition: all 0.5s ease;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 4rem;
+}
+.contacts__item i:hover {
+  transform: scale(1.2);
+  color: #795485;
+}
+.contacts__info {
+  margin: 0 auto;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+}
+.contacts__info span {
+  font-weight: 600;
 }

@@ -75,8 +75,11 @@ body {
   }
 
   &__menu {
+    position: sticky;
+    top: 0;
     padding: 2rem 0;
     background-color: #ebd2f1;
+    z-index: 10;
   }
 
   &__menu-list {
@@ -232,7 +235,7 @@ body {
   }
 
   &__items {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 6rem;
@@ -326,4 +329,45 @@ body {
       
         opacity: 0.8;
       }
+  }
+
+  /*contacts*/
+
+  .contacts {
+    &__title {
+        margin-bottom: 6rem;
+    }
+
+    &__items {
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__item {
+        font-size: 6rem;
+        transition: all 0.5s ease;
+        
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+
+        i:hover {
+            transform: scale(1.2);
+            color: #795485;
+        }
+    }
+
+    &__info {
+        margin: 0 auto;
+        max-width: 50%;
+        display: flex;
+       justify-content: space-between;
+       font-size: 3rem;
+       span {
+           font-weight: 600;
+       }
+    }
   }
