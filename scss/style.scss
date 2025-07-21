@@ -3,17 +3,18 @@ body {
 }
 
 .main {
+ position: relative;
   background-color: #edebee;
 }
 
 .container {
   max-width: 128rem;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .title {
   font-family: "Gabriela", serif;
-  font-size: 7rem;
   font-weight: 700;
   text-align: center;
   letter-spacing: 1rem;
@@ -22,6 +23,14 @@ body {
   background-clip: text;
   text-shadow: 1rem 1rem 1.5rem #c7a3cf;
   animation: 1.56s linear infinite maintitle;
+
+  &_main{
+    font-size: 7rem;
+  }
+
+  &_second { 
+    font-size: 4rem;
+  }
 }
 
 /*HEADER*/
@@ -73,44 +82,6 @@ body {
       animation: 1.56s linear infinite jumping;
     }
   }
-
-  &__menu {
-    position: sticky;
-    top: 0;
-    padding: 2rem 0;
-    background-color: #ebd2f1;
-    z-index: 10;
-  }
-
-  &__menu-list {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &__menu-item {
-    display: flex;
-    align-items: center;
-    padding: 0.3rem;
-    border-radius: 0.3rem;
-    i {
-      margin-right: 0.7rem;
-      font-size: 2rem;
-      color: #19081d;
-    }
-    &:hover {
-      box-shadow: 0 0 1rem #19081d;
-    }
-    &:not(:last-child) {
-      margin-right: 3rem;
-    }
-  }
-
-  &__menu-link {
-    display: block;
-    font-size: 2rem;
-    color: #19081d;
-    transition: all 0.5s ease;
-  }
 }
 
 @keyframes jumping {
@@ -125,9 +96,48 @@ body {
 }
 
 /*MAIN*/
+/*menu*/
+.menu {
+    position: sticky;
+    top: 0;
+    padding: 2rem 0;
+    background-color: #ebd2f1;
+    z-index: 10;
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+      }
+    
+      &__item {
+        display: flex;
+        align-items: center;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        i {
+          margin-right: 0.7rem;
+          font-size: 2rem;
+          color: #19081d;
+        }
+        &:hover {
+          box-shadow: 0 0 1rem #19081d;
+        }
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
+      }
+    
+      &__link {
+        display: block;
+        font-size: 2rem;
+        color: #19081d;
+        transition: all 0.5s ease;
+      }
+}
+
 /*about-me*/
 .aboutme {
-  padding: 7rem 0;
+  padding: 10rem 0 5rem;
   display: flex;
   // .aboutme__item
 
@@ -156,7 +166,7 @@ body {
 
 /*skills*/
 .skills {
-  padding: 7rem 0;
+  padding: 8rem 0;
 
   // .skills__title
 
@@ -214,11 +224,10 @@ body {
 
 /*portfolio*/
 .portfolio {
-  padding: 7rem 0;
+  padding: 8rem 0;
 
   &__title {
     margin-bottom: 4rem;
-    font-size: 7rem;
     letter-spacing: 1rem;
     background-image: linear-gradient(45deg, #4a1164, #6b3e79);;
     color: transparent;
@@ -229,7 +238,6 @@ body {
 
   &__subtitle {
     margin-bottom: 6rem;
-    font-size: 4rem;
     font-weight: 600;
     text-align: center;
   }
@@ -334,6 +342,7 @@ body {
   /*contacts*/
 
   .contacts {
+    padding-bottom: 7rem;
     &__title {
         margin-bottom: 6rem;
     }
@@ -362,7 +371,7 @@ body {
 
     &__info {
         margin: 0 auto;
-        max-width: 50%;
+        max-width: 60%;
         display: flex;
        justify-content: space-between;
        font-size: 3rem;
@@ -371,3 +380,261 @@ body {
        }
     }
   }
+
+  /*footer*/
+
+  .footer {
+    padding: 2rem 0;
+    background-color: #4a1164;
+    font-size: 2rem;
+    line-height: 120%;
+    color: #edebee;
+   
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100rem;
+    }
+
+    .title {
+        &_main {
+            font-size: 6rem;
+        }
+
+        &_second {
+            font-size: 3.5rem;
+        }
+    }
+
+    .skills__part:last-child {
+        display: none;
+    }
+
+    .skills__part:first-child {
+        flex: 0 1 100%;
+    }
+
+    .contacts__info {
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .menu__list {
+        justify-content: center;
+    }
+    .container {
+        max-width: 75rem;
+    }
+
+    .title_main {
+        font-size: 5rem;
+    }
+
+    .aboutme {
+        padding: 10rem 0 0;
+        flex-direction: column;
+
+        &__item {
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                max-width: 70%;
+            }
+        }
+    }
+
+    .skills {
+        padding: 8rem 0 5rem;
+
+        &__items {
+            grid-template-columns: repeat(auto-fit, minmax(auto, 15rem));
+        }
+    }
+
+    .portfolio {
+        padding: 8rem 0 5rem;
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .contacts {
+        &__item {
+            font-size: 5rem;
+        }
+
+        &__info {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 56rem;
+    }
+
+    .menu {
+        position: relative;
+        background-color: #edebee;
+
+        &__list {
+            display: none;
+        }
+     
+        &__burger {
+            display: block;
+            position: absolute;
+            top: 5rem;
+            right: 2rem;
+            width: 4rem;
+            height: 3rem;
+            z-index: 5;
+            transition: all 0.5s ease;
+        }
+        
+        &__burger span {
+        position: absolute;
+        background-color: #4a1164;
+        left: 0;
+        top: 1.5rem;
+        width: 100%;
+        height: 0.2rem;
+        box-shadow: 0 0 0.5rem #4a1164;
+        transition: all 0.3s ease 0s;
+        }
+
+        &__burger::before,
+        &__burger::after {
+            content: '';
+            background-color: #4a1164;
+            position: absolute;
+            width: 100%;
+            height: 0.2rem;
+            left: 0;
+            box-shadow: 0 0 0.5rem #4a1164;
+            transition: all 0.3s ease 0s;
+        }
+
+        &__burger::before {
+            top: 0;
+        }
+        
+        &__burger::after {
+            bottom: 0;
+        }
+        
+        &__burger_active span {
+            transform: scale(0);
+        }
+        
+        &__burger_active::before {
+            background-color: #fff;
+            transform: rotate(45deg);
+            top: 19px;
+        }
+        
+        &__burger_active::after {
+            background-color: #fff;
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+
+        &__list_active {
+            position: absolute;
+            z-index: 4;
+            display: block;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            background-color: #4a1164;
+            width: 100vw;
+            height: 100vh;
+            padding-top: 20rem;
+            padding-left: 1rem;
+            text-align: center;
+            transition: all 0.5s ease;
+            .menu__item {
+                i {
+                    margin-right: 1rem;
+                    font-size: 3rem;
+                    color: #ffffff;
+                  }
+                &:not(:last-child){
+                    margin-right: 0;
+                    margin-bottom: 5rem;
+                }
+            }
+            .menu__link {
+                font-size: 4rem;
+                color: #fff;
+            }
+        }
+    }
+	
+    .contacts__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts__info-phone {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 45rem;
+    }
+
+    .header {
+        &__hero-title {
+            font-size: 3rem;
+            span:last-child {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .title_main {
+        font-size: 3.6rem;
+    }
+
+    .title_second {
+        font-size: 2rem;
+    }
+
+    .skills {
+        padding: 8rem 0 3rem;
+
+        &__items {
+            grid-template-columns: repeat(auto-fit, minmax(auto, 10rem));
+        }
+
+        &__item {
+            width: 8rem;
+        }
+    }
+
+    .portfolio {
+        padding: 8rem 0 0;    }
+
+    .contacts__items {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
