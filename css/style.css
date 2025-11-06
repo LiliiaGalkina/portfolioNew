@@ -248,7 +248,7 @@ body {
 }
 .item-portfolio:hover .item-portfolio__info {
   box-shadow: 0 0 1rem #4e125e;
-  transform: rotateX("180deg");
+  transform: rotateX(180deg);
   opacity: 1;
 }
 .item-portfolio__info {
