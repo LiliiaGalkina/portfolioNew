@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #4e125e;
 }
@@ -33,36 +37,47 @@ body {
 }
 
 /*HEADER*/
-.header__hero {
+.header {
+  padding: 0 1.5rem;
+  background: url("../img/hero.jpg") 0 bottom/cover no-repeat;
+}
+
+.hero {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background: url("../img/hero1.jpg") 0 bottom/cover no-repeat;
-  opacity: 0.8;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-.header__hero-title {
-  margin-top: 10%;
   font-family: "Gabriela", serif;
-  display: flex;
-  flex-direction: column;
+}
+.hero__title {
+  margin-top: 10%;
   font-size: 4rem;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.5rem;
   color: #ffffff;
 }
-.header__hero-title span:last-child {
+.hero__title span:last-child {
+  display: block;
   margin-top: 2rem;
   font-size: 5rem;
   font-weight: 600;
 }
-.header__arrow-down {
+.hero__text {
+  width: 100%;
+  position: absolute;
+  bottom: 14rem;
+  left: 50%;
+  transform: translate(-50%);
+  color: #ffffff;
+  font-size: 2.6rem;
+  text-align: center;
+}
+.hero__arrow-down {
   position: absolute;
   bottom: 7rem;
+  left: 50%;
+  transform: translate(-50%);
   display: flex;
   justify-content: center;
   width: 5rem;
@@ -72,7 +87,7 @@ body {
   color: #ffffff;
   font-size: 2.4rem;
 }
-.header__arrow-down i {
+.hero__arrow-down i {
   position: absolute;
   bottom: 2.5rem;
   animation: 1.56s linear infinite jumping;
@@ -106,6 +121,7 @@ body {
   align-items: center;
   padding: 0.3rem;
   border-radius: 0.3rem;
+  transition: all 0.5s ease;
 }
 .menu__item i {
   margin-right: 0.7rem;
@@ -232,7 +248,7 @@ body {
 .item-portfolio {
   overflow: hidden;
   border-radius: 2rem;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 .item-portfolio img {
   max-width: 100%;
@@ -247,8 +263,8 @@ body {
   opacity: 0.4;
 }
 .item-portfolio:hover .item-portfolio__info {
+  transition: all 1s ease;
   box-shadow: 0 0 1rem #4e125e;
-  transform: rotateX(180deg);
   opacity: 1;
 }
 .item-portfolio__info {
@@ -540,5 +556,24 @@ body {
   .contacts__items {
     flex-wrap: wrap;
     gap: 3rem;
+  }
+}
+@media (max-width: 370px) {
+  .hero__title {
+    margin-top: 20%;
+    font-size: 3rem;
+  }
+  .hero__title span:last-child {
+    font-size: 3.6rem;
+  }
+  .hero__text {
+    font-size: 2rem;
+  }
+  .portfolio .title_main {
+    font-size: 3rem;
+  }
+  .portfolio .title_second {
+    font-size: 1.9rem;
+    letter-spacing: 0.5rem;
   }
 }

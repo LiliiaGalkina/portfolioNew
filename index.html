@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Мое портфолио</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap"
       rel="stylesheet"
-    />
+    >
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"
-    />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    >
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__hero">
-          <h1 class="header__hero-title">
+        <div class="header__hero hero">
+          <h1 class="hero__title">
             <span>Лилия Галкина</span><span>frontend developer</span>
           </h1>
-          <a href="#main" class="header__arrow-down"
+		  <p class="hero__text">Чтобы увидеть портфолио, кликните по стрелке вниз</p>
+          <a href="#main" class="hero__arrow-down"
             ><i class="fa fa-angle-down" aria-hidden="true"></i
           ></a>
         </div>
       </header>
-      <main id="main" class="main">
+      <main class="main">
         <nav class="menu">
-            <div class="container">
+            <div id="main" class="container">
                 <div id="burger" class="menu__burger"><span></span></div>  
               <ul id="menu"  class="menu__list">
                 <li class="menu__item" >
@@ -55,16 +56,16 @@
             </div>
           </nav>
         <div class="container">
-          <section id="aboutme" class="aboutme">
+          <div id="aboutme" class="aboutme">
             <div class="aboutme__item"><img src="./img/aboutme.jpg" alt="блондинка за ноутбуком"></div>
             <div class="aboutme__item">
                 <div class="about__item-text">
                     <p>Здравствуйте, меня зовут Лилия, и я начинающий frontend разработчик, который строит новую карьеру на том, что мне действительно нравится. </p> 
                     <p> В течение нескольких я оттачиваю свои навыки веб-разработчика, изучая, как создавать веб-приложения с использованием HTML, CSS, JavaScript, React, Node, базы данных в MySQL. </p>
-                    <p>  Мне очень нравится сам процесс создания, когда я НИЧТО перевращаю в НЕЧТО замечательное, чувствую себя настроящим художником. Верю в постоянное обучение, которое всё больше и больше улучшает мои навыки программирования. </p>
+                    <p>  Мне очень нравится сам процесс создания, когда я НИЧТО перевращаю в НЕЧТО , чувствую себя настроящим художником. Верю в постоянное обучение, которое всё больше и больше улучшает мои навыки программирования. </p>
                 </div>
             </div>
-          </section>
+          </div>
           <section id="skills" class="skills">
             <h2 class="skills__title title title_main">Мои навыки</h2>
             <div class="skills__parts">
@@ -88,7 +89,7 @@
             </div>
           </section>
           <section id="portfolio" class="portfolio">
-            <h2 class="portfolio__title title title_main">Портфолио</р>
+            <h2 class="portfolio__title title title_main">Портфолио</h2>
             <h3 class="portfolio__subtitle title title_second">Многостраничные сайты</h3>
             <div class="portfolio__items">
                 <a href="https://liliiagalkina.github.io/DANANZ/" class="portfolio__item item-portfolio" target="_blank">
@@ -235,8 +236,8 @@
                     </div>
                 </a>
             </div>
-            <h3 class="portfolio__subtitle title title_second">Мини-приложения на JS, TS и React</h3>
-            <div class="portfolio__items">
+            <h3 class="portfolio__subtitle title title_second">Приложения на JS, TS и React</h3>
+            <div  class="portfolio__items">
                 <a href="https://liliiagalkina.github.io/Scan/" class="portfolio__item item-portfolio" target="_blank">
                     <div class="item-portfolio__img"><img src="./img/portfolio/applications/scan.png" alt="Страница сайта проекта SCAN"></div>
                     <div class="item-portfolio__info">
@@ -313,7 +314,7 @@
       </main>
       <div class="footer">
         <div class="footer__container container">
-            <div class="footer__copyright">&copy Лилия Галкина</div>
+            <div class="footer__copyright">&copy; Лилия Галкина</div>
             <div class="footer__info">Тверь, 2025</div>
         </div>
       </div>
