@@ -438,7 +438,34 @@ body {
     background-color: #edebee;
   }
   .menu__list {
-    display: none;
+    /*display: none;*/
+    position: absolute;
+    z-index: 4;
+    display: block;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    background-color: #4a1164;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20rem;
+    padding-left: 1rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .menu__list .menu__item i {
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  .menu__list .menu__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+  .menu__list .menu__link {
+    font-size: 4rem;
+    color: #fff;
   }
   .menu__burger {
     display: block;
@@ -490,32 +517,7 @@ body {
     bottom: 9px;
   }
   .menu__list_active {
-    position: absolute;
-    z-index: 4;
-    display: block;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    background-color: #4a1164;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 20rem;
-    padding-left: 1rem;
-    text-align: center;
-    transition: all 0.5s ease;
-  }
-  .menu__list_active .menu__item i {
-    margin-right: 1rem;
-    font-size: 3rem;
-    color: #ffffff;
-  }
-  .menu__list_active .menu__item:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 5rem;
-  }
-  .menu__list_active .menu__link {
-    font-size: 4rem;
-    color: #fff;
+    opacity: 1;
   }
   .contacts__info {
     flex-direction: column;
