@@ -57,11 +57,12 @@ body {
   letter-spacing: 0.5rem;
   color: #ffffff;
 }
-.hero__title span:last-child {
+.hero__title p:last-child {
   display: block;
   margin-top: 2rem;
   font-size: 5rem;
   font-weight: 600;
+  animation: 8s linear myposition;
 }
 .hero__text {
   width: 100%;
@@ -93,6 +94,30 @@ body {
   animation: 1.56s linear infinite jumping;
 }
 
+@keyframes letter {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes myposition {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes jumping {
   0% {
     transform: translateY(0.5rem);

@@ -58,11 +58,13 @@ body {
     text-align: center;
     letter-spacing: 0.5rem;
     color: #ffffff;
-    span:last-child {
+
+    p:last-child {
       display: block;
       margin-top: 2rem;
       font-size: 5rem;
       font-weight: 600;
+      animation: 8s linear myposition;
     }
   }
 
@@ -95,6 +97,33 @@ body {
       bottom: 2.5rem;
       animation: 1.56s linear infinite jumping;
     }
+  }
+}
+
+
+@keyframes letter {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes myposition {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -502,8 +531,8 @@ body {
 
     &__list {
       /*display: none;*/
-	 
-	 position: absolute;
+
+      position: absolute;
       z-index: 4;
       display: block;
       overflow: auto;
@@ -515,7 +544,7 @@ body {
       padding-top: 20rem;
       padding-left: 1rem;
       text-align: center;
-	   opacity: 0;
+      opacity: 0;
       transition: opacity 0.5s ease;
       .menu__item {
         i {
@@ -593,7 +622,7 @@ body {
     }
 
     &__list_active {
-     opacity: 1;
+      opacity: 1;
     }
   }
 
