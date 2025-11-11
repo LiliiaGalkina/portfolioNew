@@ -26,7 +26,7 @@ function animateWord(word) {
 	let text = word.dataset.text;
 	let ind = 1;
   text.split("").forEach((letter) => {
-	  setTimeout(() => word.textContent += letter, ind * 400);
+	  setTimeout(() => word.textContent += letter, ind * 200);
 	  ind++;
 	console.log(word.textContent);
   });

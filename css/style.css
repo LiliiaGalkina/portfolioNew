@@ -61,7 +61,7 @@ body {
   margin-top: 2rem;
   font-size: 5rem;
   font-weight: 600;
-  animation: 10s linear myposition;
+  animation: 6s linear myposition;
 }
 .hero__text {
   width: 100%;
