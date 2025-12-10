@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мое портфолио</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"
-    >
-    <link rel="stylesheet" href="./css/reset.css">
-	 <link
-    rel="stylesheet"
-    href="./css/animate.css">
-    <link rel="stylesheet" href="./css/style.css">
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__hero hero">
           <h1 class="hero__title">
-            <span class="name" data-text = "Лилия Галкина"> </span><span class="myposition animated bounceInDown">frontend developer</span>
+            <span class="name" data-text="Лилия Галкина"> </span
+            ><span class="myposition animated bounceInDown"
+              >frontend developer</span
+            >
           </h1>
-		  <p class="hero__text">Чтобы увидеть портфолио, кликните по стрелке вниз</p>
+          <p class="hero__text">
+            Чтобы увидеть портфолио, кликните по стрелке вниз
+          </p>
           <a href="#main" class="hero__arrow-down"
             ><i class="fa fa-angle-down" aria-hidden="true"></i
           ></a>
@@ -36,297 +39,762 @@
       </header>
       <main class="main">
         <nav class="menu">
-            <div id="main" class="container">
-                <div id="burger" class="menu__burger"><span></span></div>  
-              <ul id="menu"  class="menu__list">
-                <li class="menu__item" >
-                  <i class="fa fa-street-view"></i>
-                  <a href="#aboutme" class="menu__link">Обо мне</a>
-                </li>
-                <li class="menu__item">
-                  <i class="fa fa-star"></i>
-                  <a href="#skills" class="menu__link">Навыки</a>
-                </li>
-                <li class="menu__item">
-                  <i class="fa fa-book"></i>
-                  <a href="#portfolio" class="menu__link">Портфолио</a>
-                </li>
-                <li class="menu__item">
-                  <i class="fa fa-envelope-open"></i>
-                  <a href="#contacts" class="menu__link">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <div id="main" class="container">
+            <div id="burger" class="menu__burger"><span></span></div>
+            <ul id="menu" class="menu__list">
+              <li class="menu__item">
+                <i class="fa fa-street-view"></i>
+                <a href="#aboutme" class="menu__link">Обо мне</a>
+              </li>
+              <li class="menu__item">
+                <i class="fa fa-star"></i>
+                <a href="#skills" class="menu__link">Навыки</a>
+              </li>
+              <li class="menu__item">
+                <i class="fa fa-book"></i>
+                <a href="#portfolio" class="menu__link">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <i class="fa fa-envelope-open"></i>
+                <a href="#contacts" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div class="container">
           <div id="aboutme" class="aboutme">
-            <div class="aboutme__item  wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="50"><img src="./img/aboutme.jpg" alt="блондинка за ноутбуком"></div>
-            <div class="aboutme__item  wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="50">
-                <div class="about__item-text">
-                    <p>Здравствуйте, меня зовут Лилия, и я начинающий frontend разработчик, который строит новую карьеру на том, что мне действительно нравится. </p> 
-                    <p> В течение нескольких я оттачиваю свои навыки веб-разработчика, изучая, как создавать веб-приложения с использованием HTML, CSS, JavaScript, React, Node, базы данных в MySQL. </p>
-                    <p>  Мне очень нравится сам процесс создания, когда я НИЧТО перевращаю в НЕЧТО , чувствую себя настроящим художником. Верю в постоянное обучение, которое всё больше и больше улучшает мои навыки программирования. </p>
-                </div>
+            <div
+              class="aboutme__item wow animate__fadeInLeft"
+              data-wow-duration="3s"
+              data-wow-offset="50"
+            >
+              <img src="./img/aboutme.jpg" alt="блондинка за ноутбуком" />
+            </div>
+            <div
+              class="aboutme__item wow animate__fadeInRight"
+              data-wow-duration="3s"
+              data-wow-offset="50"
+            >
+              <div class="about__item-text">
+                <p>
+                  Здравствуйте, меня зовут Лилия, и я начинающий frontend
+                  разработчик, который строит новую карьеру на том, что мне
+                  действительно нравится.
+                </p>
+                <p>
+                  В течение нескольких я оттачиваю свои навыки веб-разработчика,
+                  изучая, как создавать веб-приложения с использованием HTML,
+                  CSS, JavaScript, React, Node, базы данных в MySQL.
+                </p>
+                <p>
+                  Мне очень нравится сам процесс создания, когда я НИЧТО
+                  перевращаю в НЕЧТО , чувствую себя настроящим художником. Верю
+                  в постоянное обучение, которое всё больше и больше улучшает
+                  мои навыки программирования.
+                </p>
+              </div>
             </div>
           </div>
           <section id="skills" class="skills">
             <h2 class="skills__title title title_main">Мои навыки</h2>
             <div class="skills__parts">
-                <div class="skills__part wow animate__fadeInLeft" data-wow-duration="3s" data-wow-offset="50">
-                    <div class="skills__items">
-                        <div class="skills__item"><img src="./img/skills/html5.png" alt="HTML5"></div>
-                        <div class="skills__item"><img src="./img/skills/css3.png" alt="CSS3"></div>
-                        <div class="skills__item"><img src="./img/skills/javascript.png" alt="JS"></div>
-                        <div class="skills__item"><img src="./img/skills/sass.png" alt="SASS"></div>
-                        <div class="skills__item"><img src="./img/skills/git.png" alt="GIT"></div>
-                        <div class="skills__item"><img src="./img/skills/github.png" alt="GITHUB"></div>
-                        <div class="skills__item"><img src="./img/skills/react.png" alt="REACT"></div>
-                        <div class="skills__item"><img src="./img/skills/redux.png" alt="REDUX"></div>
-                        <div class="skills__item"><img src="./img/skills/typescript.png" alt="TS"></div>
-                        <div class="skills__item"><img src="./img/skills/node-js.png" alt="NODE-JS"></div>
-                        <div class="skills__item"><img src="./img/skills/webpack.png" alt="WEBPACK"></div>
-                        <div class="skills__item"><img src="./img/skills/mysql.png" alt="MYSQL"></div>
-                    </div>
+              <div
+                class="skills__part wow animate__fadeInLeft"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+              >
+                <div class="skills__items">
+                  <div class="skills__item">
+                    <img src="./img/skills/html5.png" alt="HTML5" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/css3.png" alt="CSS3" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/javascript.png" alt="JS" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/sass.png" alt="SASS" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/git.png" alt="GIT" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/github.png" alt="GITHUB" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/react.png" alt="REACT" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/redux.png" alt="REDUX" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/typescript.png" alt="TS" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/node-js.png" alt="NODE-JS" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/webpack.png" alt="WEBPACK" />
+                  </div>
+                  <div class="skills__item">
+                    <img src="./img/skills/mysql.png" alt="MYSQL" />
+                  </div>
                 </div>
-                <div class="skills__part wow animate__fadeInRight" data-wow-duration="3s" data-wow-offset="50"><img src="./img/cat.webp" alt="кот за компьютером"></div>
+              </div>
+              <div
+                class="skills__part wow animate__fadeInRight"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+              >
+                <img src="./img/cat.webp" alt="кот за компьютером" />
+              </div>
             </div>
           </section>
           <section id="portfolio" class="portfolio">
             <h2 class="portfolio__title title title_main">Портфолио</h2>
-            
-            <h3 class="portfolio__subtitle title title_second">Одностраничные сайты и отдельные страницы</h3>
+
+            <h3 class="portfolio__subtitle title title_second">
+              Одностраничные сайты и отдельные страницы
+            </h3>
             <div class="portfolio__items">
-                 <a href="https://liliiagalkina.github.io/kitchen/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/kitchen.png" alt="Сайт немецких кухонь"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Сайт немецких кухонь</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/cookis/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/coocies.png" alt="Сайт магазина печенья"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Сайт магазина печенья</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/PRAVO//" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/pravo.png" alt="Сайт юридической фирмы"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Сайт юридической фирмы</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/SIMPLE/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/simple.png" alt="Сайт производителя бумаги"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта производителя бумаги</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/Youtalk/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/youtalk.png" alt="Сайт о психологии"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта о психологии</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/Bicycles/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/bicycles.png" alt="Сайт магазина велосипедов"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта магазина велосипедов</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/whirl/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/whril.png" alt="Сайт Whril"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница Whril</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/FROMBOARD-DELIVERY/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/fromboard.png" alt="Сайт компании доставки"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Сайт компании доставки</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/FB/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/FB.png" alt="Страница сайта о природных артефактах"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта о природных артефактах</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/KOSMETOLOGIA/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/kosmetologia.png" alt="Страница сайта косметологической фирмы"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта косметологической фирмы</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/GoogLife/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/gooflife.png" alt="Страница сайта фитнесс-центра"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта фитнесс-центра</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/GREEN-ENERGY/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/greenenergy.png" alt="Страница сайта о природной энергии"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Cайт о природной энергии</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/CATS-FOOD/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/catsfood.png" alt="Сайт продажи кошачьих кормов"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта продажи кошачьих кормов</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                 <a href="https://liliiagalkina.github.io/DEVCLOUD-SOLUTIONS/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/devcloud.png" alt="Страница сайта компании по разработке ПО"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта компании по разработке ПО</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/Freehand/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/onepage/freehand.png" alt="Страница сайта Freehand"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница сайта Freehand</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
+              <a
+                href="https://liliiagalkina.github.io/kitchen/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/kitchen.png"
+                    alt="Сайт немецких кухонь"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Сайт немецких кухонь
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/cookis/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/coocies.png"
+                    alt="Сайт магазина печенья"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Сайт магазина печенья
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/PRAVO//"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/pravo.png"
+                    alt="Сайт юридической фирмы"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Сайт юридической фирмы
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/SIMPLE/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/simple.png"
+                    alt="Сайт производителя бумаги"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта производителя бумаги
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/Youtalk/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/youtalk.png"
+                    alt="Сайт о психологии"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта о психологии
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/Bicycles/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/bicycles.png"
+                    alt="Сайт магазина велосипедов"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта магазина велосипедов
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/whirl/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/whril.png"
+                    alt="Сайт Whril"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">Страница Whril</h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/FROMBOARD-DELIVERY/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/fromboard.png"
+                    alt="Сайт компании доставки"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Сайт компании доставки
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/FB/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/FB.png"
+                    alt="Страница сайта о природных артефактах"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта о природных артефактах
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/KOSMETOLOGIA/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/kosmetologia.png"
+                    alt="Страница сайта косметологической фирмы"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта косметологической фирмы
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/GoogLife/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/gooflife.png"
+                    alt="Страница сайта фитнесс-центра"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта фитнесс-центра
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/GREEN-ENERGY/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/greenenergy.png"
+                    alt="Страница сайта о природной энергии"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Cайт о природной энергии
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/CATS-FOOD/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/catsfood.png"
+                    alt="Сайт продажи кошачьих кормов"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта продажи кошачьих кормов
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/DEVCLOUD-SOLUTIONS/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/devcloud.png"
+                    alt="Страница сайта компании по разработке ПО"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта компании по разработке ПО
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/Freehand/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/onepage/freehand.png"
+                    alt="Страница сайта Freehand"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница сайта Freehand
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
             </div>
-            <h3 class="portfolio__subtitle title title_second">Многостраничные сайты</h3>
+            <h3 class="portfolio__subtitle title title_second">
+              Многостраничные сайты
+            </h3>
             <div class="portfolio__items">
-                <a href="https://liliiagalkina.github.io/DANANZ/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/manypages/dananz.png" alt="сайт DANANZ"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Кухни DANANZ</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/eatly/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/manypages/eatly.png" alt="сайт DANANZ"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Доставка еды EATLY</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                <!--<a href="https://liliiagalkina.github.io/IGOLKI/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
+              <a
+                href="https://liliiagalkina.github.io/DANANZ/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/manypages/dananz.png"
+                    alt="сайт DANANZ"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">Кухни DANANZ</h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/eatly/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/manypages/eatly.png"
+                    alt="сайт DANANZ"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">Доставка еды EATLY</h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <!--<a href="https://liliiagalkina.github.io/IGOLKI/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
                     <div class="item-portfolio__img"><img src="./img/portfolio/manypages/igolki.png" alt="сайт рефлексотерапевта Раховой Р.К."></div>
                     <div class="item-portfolio__info">
                         <h3 class="item-portfolio__info-title">Cайт рефлексотерапевта Раховой Р.К.</h3>
                         <p>Используемые технологии: HTML5, SCSS, JS</p>
                     </div>
                 </a>-->
-                <!--<a href="https://liliiagalkina.github.io/MASSAZ/"  class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
+              <!--<a href="https://liliiagalkina.github.io/MASSAZ/"  class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
                     <div class="item-portfolio__img"><img src="./img/portfolio/manypages/massaz.png" alt="Сайт клиники медицинского массажа"></div>
                     <div class="item-portfolio__info">
                         <h3 class="item-portfolio__info-title">Сайт клиники медицинского массажа</h3>
                         <p>Используемые технологии: HTML5, SCSS, JS</p>
                     </div>
                 </a>-->
-                <a href="https://liliiagalkina.github.io/KOSMETIKA/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/manypages/kosmetika.png" alt="Сайт о косметике"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Сайт о косметике</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
+              <a
+                href="https://liliiagalkina.github.io/KOSMETIKA/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/manypages/kosmetika.png"
+                    alt="Сайт о косметике"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">Сайт о косметике</h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
             </div>
-            <h3 class="portfolio__subtitle title title_second">Приложения на JS, TS и React</h3>
-            <div  class="portfolio__items">
-                <a href="https://liliiagalkina.github.io/Scan/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/applications/scan.png" alt="Страница сайта проекта SCAN"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Проект SCAN</h3>
-                        <p>Используемые технологии: React, SCSS, TS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/flights/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/applications/flights.png" alt="Выбор билетов на самолет"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Имитация выбора билетов на самолет</h3>
-                        <p>Используемые технологии: React, Redux, SCSS, TS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/bookstore/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/applications/bookshop.png" alt="Страница книжного магазина"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Страница книжного магазина</h3>
-                        <p>Данные поступают динамически с Google Books API.Используемые технологии: HTML5, SCSS, JS, WEBPACK</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/kanbanboard/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/applications/kanbanboard.png" alt=">Канбан доска"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Канбан доска</h3>
-                        <p>Используемые технологии: React, SCSS, JS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/weather/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/applications/wheather.png" alt="Прогноз погоды на сегодня"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Прогноз погоды на сегодня</h3>
-                        <p>Данные поступают динамически с API openweathermap. Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/-currency-calculator/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/applications/valute.png" alt="Конвертер валют"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Конвертер валют</h3>
-                        <p>Данные поступают динамически с open.er-api. Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/CHISLA/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/applications/digits.png" alt="Написать число прописью"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Написать число прописью</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
-                <a href="https://liliiagalkina.github.io/sliderJS/" class="portfolio__item item-portfolio wow animate__fadeInUp" data-wow-duration="3s" data-wow-offset="50" target="_blank">
-                    <div class="item-portfolio__img"><img src="./img/portfolio/applications/sliderJS.png" alt="Слайдер на JS"></div>
-                    <div class="item-portfolio__info">
-                        <h3 class="item-portfolio__info-title">Слайдер на JS</h3>
-                        <p>Используемые технологии: HTML5, SCSS, JS</p>
-                    </div>
-                </a>
+            <h3 class="portfolio__subtitle title title_second">
+              Приложения на JS, TS и React
+            </h3>
+            <div class="portfolio__items">
+              <a
+                href="https://liliiagalkina.github.io/Scan/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/scan.png"
+                    alt="Страница сайта проекта SCAN"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">Проект SCAN</h3>
+                  <p>Используемые технологии: React, SCSS, TS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/flights/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/flights.png"
+                    alt="Выбор билетов на самолет"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Имитация выбора билетов на самолет
+                  </h3>
+                  <p>Используемые технологии: React, Redux, SCSS, TS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/Podcast/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/podcast.png"
+                    alt="Сайт Podcast"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                   Сайт Podcast
+                  </h3>
+                  <p>Используемые технологии: React, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/bookstore/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/bookshop.png"
+                    alt="Страница книжного магазина"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Страница книжного магазина
+                  </h3>
+                  <p>
+                    Данные поступают динамически с Google Books API.Используемые
+                    технологии: HTML5, SCSS, JS, WEBPACK
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/kanbanboard/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/kanbanboard.png"
+                    alt=">Канбан доска"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">Канбан доска</h3>
+                  <p>Используемые технологии: React, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/weather/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/wheather.png"
+                    alt="Прогноз погоды на сегодня"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Прогноз погоды на сегодня
+                  </h3>
+                  <p>
+                    Данные поступают динамически с API openweathermap.
+                    Используемые технологии: HTML5, SCSS, JS
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/-currency-calculator/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/valute.png"
+                    alt="Конвертер валют"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">Конвертер валют</h3>
+                  <p>
+                    Данные поступают динамически с open.er-api. Используемые
+                    технологии: HTML5, SCSS, JS
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/CHISLA/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/digits.png"
+                    alt="Написать число прописью"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">
+                    Написать число прописью
+                  </h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
+              <a
+                href="https://liliiagalkina.github.io/sliderJS/"
+                class="portfolio__item item-portfolio wow animate__fadeInUp"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+                target="_blank"
+              >
+                <div class="item-portfolio__img">
+                  <img
+                    src="./img/portfolio/applications/sliderJS.png"
+                    alt="Слайдер на JS"
+                  />
+                </div>
+                <div class="item-portfolio__info">
+                  <h3 class="item-portfolio__info-title">Слайдер на JS</h3>
+                  <p>Используемые технологии: HTML5, SCSS, JS</p>
+                </div>
+              </a>
             </div>
           </section>
           <section id="contacts" class="contacts">
             <h2 class="contacts__title title title_main">Мои контакты</h2>
             <div class="contacts__items">
-                <a href="mailto:vvlili@yandex.ru" class="contacts__item wow animate__rotateIn" data-wow-duration="0.5s" data-wow-offset="50" target="_blank"><i class="fas fa-envelope-square"></i></a>
-                <a href="tel:+79201710691" class="contacts__item wow animate__rotateIn" data-wow-duration="0.5s" data-wow-delay="0.5s" data-wow-offset="50" target="_blank"><i class="fa-solid fa-phone"></i></a>
-                <a href="https://wa.me/+79201710691" class="contacts__item  wow animate__rotateIn" data-wow-duration="0.5s" data-wow-delay="1s" data-wow-offset="50"  target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
-                <a href="" class="contacts__item  wow animate__rotateIn" data-wow-duration="0.5s" data-wow-delay="1.5s" data-wow-offset="50"  target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                <a href="https://github.com/LiliiaGalkina" class="contacts__item  wow animate__rotateIn" data-wow-duration="0.5s" data-wow-delay="2s" data-wow-offset="50" target="_blank"><i class="fab fa-github"></i></a>
+              <a
+                href="mailto:vvlili@yandex.ru"
+                class="contacts__item wow animate__rotateIn"
+                data-wow-duration="0.5s"
+                data-wow-offset="50"
+                target="_blank"
+                ><i class="fas fa-envelope-square"></i
+              ></a>
+              <a
+                href="tel:+79201710691"
+                class="contacts__item wow animate__rotateIn"
+                data-wow-duration="0.5s"
+                data-wow-delay="0.5s"
+                data-wow-offset="50"
+                target="_blank"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+              <a
+                href="https://wa.me/+79201710691"
+                class="contacts__item wow animate__rotateIn"
+                data-wow-duration="0.5s"
+                data-wow-delay="1s"
+                data-wow-offset="50"
+                target="_blank"
+                ><i class="fa-brands fa-square-whatsapp"></i
+              ></a>
+              <a
+                href=""
+                class="contacts__item wow animate__rotateIn"
+                data-wow-duration="0.5s"
+                data-wow-delay="1.5s"
+                data-wow-offset="50"
+                target="_blank"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+              <a
+                href="https://github.com/LiliiaGalkina"
+                class="contacts__item wow animate__rotateIn"
+                data-wow-duration="0.5s"
+                data-wow-delay="2s"
+                data-wow-offset="50"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
             <div class="contacts__info">
-                <div class="contacts__info-phone wow animate__fadeInLeftBig" data-wow-duration="3s"  data-wow-offset="50">tel: <span>+79201710691</span></div>
-                <div class="contacts__info-email wow animate__fadeInRightBig" data-wow-duration="3s" data-wow-offset="50">email: <span>vvlili@yandex.ru</span></div>
+              <div
+                class="contacts__info-phone wow animate__fadeInLeftBig"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+              >
+                tel: <span>+79201710691</span>
+              </div>
+              <div
+                class="contacts__info-email wow animate__fadeInRightBig"
+                data-wow-duration="3s"
+                data-wow-offset="50"
+              >
+                email: <span>vvlili@yandex.ru</span>
+              </div>
             </div>
           </section>
         </div>
       </main>
       <div class="footer">
         <div class="footer__container container">
-            <div class="footer__copyright">&copy; Лилия Галкина</div>
-            <div class="footer__info">Тверь, 2025</div>
+          <div class="footer__copyright">&copy; Лилия Галкина</div>
+          <div class="footer__info">Тверь, 2025</div>
         </div>
       </div>
     </div>
-	<script src="./js/wow.min.js"></script>
-	<script>
-  new WOW({mobile: false}).init();
-</script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW({ mobile: false }).init();
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>
