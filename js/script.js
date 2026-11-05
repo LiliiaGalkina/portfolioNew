@@ -21,18 +21,3 @@ for (let item of menuItems) {
   item.addEventListener("click", mobileMenuItem);
 }
 
-/**/
-function animateWord(word) {
-	let text = word.dataset.text;
-	let ind = 1;
-  text.split("").forEach((letter) => {
-	  setTimeout(() => word.textContent += letter, ind * 200);
-	  ind++;
-	console.log(word.textContent);
-  });
-}
-
-const word = document.querySelector(".name");
-
-
-animateWord(word);

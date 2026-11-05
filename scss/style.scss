@@ -58,14 +58,6 @@ body {
     text-align: center;
     letter-spacing: 0.5rem;
     color: #ffffff;
-
-    span:last-child {
-      display: block;
-      margin-top: 2rem;
-      font-size: 5rem;
-      font-weight: 600;
-      animation: 6s linear myposition;
-    }
   }
 
   &__text {
@@ -100,15 +92,28 @@ body {
   }
 }
 
+.name {
+	 display: block;
+      margin-bottom: 3rem;
+      animation: 4s linear letter;
+}
+
+.myposition {
+	  display: block;
+      margin-top: 2rem;
+      font-size: 5rem;
+      font-weight: 600;
+      animation: 6s linear myposition;
+}
 
 @keyframes letter {
   0% {
     opacity: 0;
-    transform: translateY(-15px);
+    transform: scale(0.8);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: scale(1);
   }
 }
 
